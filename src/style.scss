@@ -1,3 +1,22 @@
+@mixin mobile{
+    @media screen and (max-width : 480px) {
+        @content;
+        
+    }
+}
+@mixin tablet{
+    @media screen and (max-width : 768px) {
+        @content;
+        
+    }
+}
+@mixin tablet{
+    @media screen and (max-width : 1220px) {
+        @content;
+        
+    }
+}
+
 
 
 
@@ -19,6 +38,7 @@
             color : #232242; 
             font-weight: bold; 
             font-size: 24px;
+           
 
         }
         .Title{
@@ -101,6 +121,9 @@
                 color: #ddddf7;
                 .logo{
                     font-weight: bold;
+                    @include tablet{
+                        display: none;
+                    }
                 }
                 .user{
                     display: flex;
