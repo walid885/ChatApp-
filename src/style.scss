@@ -176,7 +176,31 @@
         }
 
     }
-        .chat{flex:2;}
+        .chat{
+            flex:2;
+            .chatInfo{
+                height: 50px;
+                display: flex;
+                background-color: #5d5b8d;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgray;
+            }
+            .chatIcons{
+                display: flex;
+                gap: 10px;
+            img{
+                height: 24px;
+            }
+
+            }
+            
+
+            }
+        
+        
+        }
     }
 
-}
+
